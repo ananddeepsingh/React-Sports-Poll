@@ -1,0 +1,90 @@
+*{
+  outline: none
+}
+body{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+body.FOOTBALL{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/football.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.TENNIS{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/football.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.SNOOKER{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/SNOOKER.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.TENNIS{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/ICE_HOCKEY.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.HANDBALL{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/HANDBALL.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body.ICE_HOCKEY{
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)),  url("./images/ICE_HOCKEY.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ #pollType{
+  color: #fff;
+}
+
+#wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+label{
+  width: 100%;
+  display: block;
+}
+
+#newPoll,
+#submitBtn{
+  border: none;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  background: skyblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#submitBtn{
+  float: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  padding: 5px 0;
+}
