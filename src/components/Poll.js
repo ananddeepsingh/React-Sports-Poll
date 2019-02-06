@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import PollResultComponent from './PollResultComponent';
+// import Noty from 'noty';
+
+import '../../node_modules/noty/lib/noty.css';
+import '../../node_modules/noty/lib/themes/mint.css';
+const Noty = require('noty');
 
 class Poll extends Component {
 
@@ -24,13 +29,10 @@ class Poll extends Component {
     body.className = '';
     let randomObj = this.state.randomObj.sport;
     body.classList.add(randomObj);
-    console.log('load bg called')
   }
   
   showNewPoll = (e) =>{
     e.preventDefault();
-    console.log(this.setRandomObj().sport)
-
     this.setState({
       randomObj : this.setRandomObj()
     })
@@ -60,7 +62,7 @@ class Poll extends Component {
     
     if( AllRecords === null ){
       result.push(obj)
-      this.setItemInStorage("PollResult", result)
+      this.setItemInStorage("PollResult", result);
 
     }else{
       let index = AllRecords.findIndex( record => record.sportID === obj.sportID);
@@ -74,7 +76,14 @@ class Poll extends Component {
         AllRecords.push(obj)
         this.setItemInStorage("PollResult", AllRecords)
       }
+      
     }
+
+    new Noty({
+      text: 'You Selected ' + obj.result+ ' option',
+      theme: 'mint',
+      timeout: 1000
+    }).show();
 
     this.setState({
       isDataAvailable: true
